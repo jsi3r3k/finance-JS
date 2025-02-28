@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyTrack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="money.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="money.png" alt="MoneyTrack">
+        <h1>MoneyTrack</h1>
+        <form id="transaction-form">
+            <input type="text" id="description" placeholder="Nazwa" required>
+            <input type="number" id="amount" placeholder="Kwota" required>
+            <select id="category-type" required>
+                <option value="income">Wpływy</option>
+                <option value="expense">Wydatki</option>
+            </select>
+            <select id="category" required></select>
+            <input type="text" id="new-category" placeholder="Nowa kategoria">
+            <button type="submit">Dodaj</button>
+        </form>
+        <h2>Transakcje</h2>
+        <ul id="transaction-list"></ul>
+        <h2>Podsumowanie</h2>
+        <p id="summary"></p>
+        <h2>Wykres</h2>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

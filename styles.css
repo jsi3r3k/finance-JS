@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: "Ubuntu", serif;
+    background-color: #202020;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 150px;
+    display: flex;
+    justify-self: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgb(56, 56, 56);
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "ubuntu", sans-serif;
+    color: #cc3ca1;
+    font-weight: 600;
+}
+
+button {
+    background-color: #cc3ca1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #f735ac;
+}
+
+.remove-btn {
+    margin-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: #202020;
+}
+
+li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #ccc;
+}
+
+li.income {
+    border-color: #c428e4;
+}
+
+li.expense {
+    border-color: #e64555;
+}
+
+#summary {
+    text-align: center;
+}
+
+canvas {
+    margin-top: 20px;
+}
